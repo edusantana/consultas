@@ -280,16 +280,14 @@ $.getJSON( "consultas/eduardo/21-04-2020.json", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
-
-    $('#' + key +' >tspan').css('fill','red')
-
-
   });
 
   $( "<ul/>", {
     "class": "my-new-list",
     html: items.join( "" )
   }).appendTo( "body" );
+
+  $('#provocada >tspan').css('fill','red')
 });
 
 
