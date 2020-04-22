@@ -23,6 +23,17 @@
   "cardiaco":1,
   "plexosolar":1,
   "sacro":1,
-  "basico":1
+  "basico":1,
+
+  "boca":1,
+  "faringe":1,
+  "esofago":1,
+  "estomago":1,
+  "pancreas":1,
+  "figado":1,
+  "vesicula":1,
+  "intestino_delgado":1,
+  "intestino_grosso":1,
+  "apendice":1
 
 }
