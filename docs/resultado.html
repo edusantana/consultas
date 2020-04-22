@@ -27,6 +27,21 @@ ul { color: gray;}
 
 <h2>Influências externas</h2>
 
+<p>Descrição breve sobre o que são influências externas e como elas nos desequilíbram.</p>
+
+<ul class="normal">
+  <li class="telurica">Energia Telúrica: energia nociva proveniente das águas do subsolo</li>
+  <li class="pessoas">Energia de Pessoas</li>
+  <li class="profissional">Ambiente Profissional</li>
+  <li class="familiar">Ambiente Familiar</li>
+  <li class="sff">S.F.F.</li>
+  <li class="outra_externa">Outra</li>
+  <li class="relacionamento">Relacionamentos</li>
+  <li class="provocada">Energia Provocada</li>
+</ul>
+
+
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -338,19 +353,20 @@ ul { color: gray;}
   </g>
 </svg>
 
-
-<ul class="normal">
-  <li class="telurica">Energia Telúrica: energia nociva proveniente das águas do subsolo</li>
-  <li class="pessoas">Energia de Pessoas</li>
-  <li class="profissional">Ambiente Profissional</li>
-  <li class="familiar">Ambiente Familiar</li>
-  <li class="sff">S.F.F.</li>
-  <li class="outra_externa">Outra</li>
-  <li class="relacionamento">Relacionamentos</li>
-  <li class="provocada">Energia Provocada</li>
-</ul>
-
 <h2>Influências internas</h2>
+
+<p>Descrição breve sobre o que são influências internas e como elas nos desequilíbram.</p>
+
+<ul>
+  <li class="medo">Medo</li>
+  <li class="inseguranca">Insegurança</li>
+  <li class="culpa">Sentimento de Culpa</li>
+  <li class="ciumes">Ciúmes</li>
+  <li class="violencia">Violência</li>
+  <li class="ideias">Ideias Rígidas</li>
+  <li class="lembrancas">Lembranças do Passado</li>
+  <li class="outra_interna">Outra</li>
+</ul>
 
 
 <svg
@@ -619,19 +635,22 @@ ul { color: gray;}
   </g>
 </svg>
 
-<ul>
-  <li class="medo">Medo</li>
-  <li class="inseguranca">Insegurança</li>
-  <li class="culpa">Sentimento de Culpa</li>
-  <li class="ciumes">Ciúmes</li>
-  <li class="violencia">Violência</li>
-  <li class="ideias">Ideias Rígidas</li>
-  <li class="lembrancas">Lembranças do Passado</li>
-  <li class="outra_interna">Outra</li>
-</ul>
 
 
 <h1>Chacras</h1>
+
+<p>Descrição sobre o que são Chacras e como eles se desequilibram</p>
+
+<ul>
+  <li class="coronario">Coronário</li>
+  <li class="frontal">Frontal</li>
+  <li class="laringeo">Laringeo</li>
+  <li class="cardiaco">Cardíaco</li>
+  <li class="plexosolar">Plexo Solar</li>
+  <li class="sacro">Sacro</li>
+  <li class="basico">Básico</li>
+</ul>
+
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -851,48 +870,8 @@ ul { color: gray;}
   </g>
 </svg>
 
-
-<ul>
-  <li class="coronario">Coronário</li>
-  <li class="frontal">Frontal</li>
-  <li class="laringeo">Laringeo</li>
-  <li class="cardiaco">Cardíaco</li>
-  <li class="plexosolar">Plexo Solar</li>
-  <li class="sacro">Sacro</li>
-  <li class="basico">Básico</li>
-</ul>
-
 <script src="jquery.js"></script>
-
-<script>
-const urlParams = new URLSearchParams(window.location.search);
-
-const cliente = urlParams.get("cliente");
-const consulta = urlParams.get("consulta");
-
-console.log("Atualizando cores a partir da consulta");
-console.log(consulta);
-console.log(cliente);
-
-$.getJSON( "consultas/"+cliente+"/"+consulta+".json", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    if (val == 1){
-      var corDaImagem ="red";
-      var classe ="desequilibrio";
-    }else{
-      var corDaImagem ="blue";
-      var classe ="equilibrio";
-    }
-
-    // Texto
-    $( "." + key ).addClass(classe);
-    // SVG
-    $('#' + key +' >tspan').css('fill',corDaImagem);
-    $('#' + key).css('fill',corDaImagem); // chakras
-  });
-});
-</script>
+<script src="consultas.js"></script>
 
 </body>
 </html>
