@@ -644,14 +644,15 @@ $.getJSON( "consultas/"+cliente+"/"+consulta+".json", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     if (val == 1){
-      // Imagem SVG
-      $('#' + key +' >tspan').css('fill','red');
+      var corDaImagem ="red";
       var classe ="desequilibrio";
     }else{
+      var corDaImagem ="blue";
       var classe ="equilibrio";
-      $('#' + key +' >tspan').css('fill','green');
     }
 
+    // SVG
+    $('#' + key +' >tspan').css('fill',corDaImagem);
     // Texto
     $( "." + key ).addClass(classe);
   });
