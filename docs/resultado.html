@@ -3,6 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Page Title</title>
+
+<style type="text/css">
+.equilibrio { color: blue;}
+.desequilibrio { color: red;}
+</style>
 </head>
 <body>
 
@@ -11,11 +16,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <ul>
-  <li style="color:red">Vemelho indica desequilíbrio</li>
-  <li style="color:blue">Azul indica normal</li>
+  <li class="equilibrio">Azul está normal</li>
+  <li class="desequilibrio">Vemelho indica desequilíbrio</li>
 </ul>
-
-
 
 
 <h2>Influências externas</h2>
@@ -333,14 +336,14 @@
 
 
 <ul>
-<li>Energia Telúrica</li>
-<li>Energia de Pessoas</li>
-<li>Ambiente Profissional</li>
-<li>Ambiente Familiar</li>
-<li>S.F.F.</li>
-<li>Outra</li>
-<li>Relacionamentos</li>
-<li>Energia Provocada</li>
+<li class="telurica">Energia Telúrica</li>
+<li class="pessoas">Energia de Pessoas</li>
+<li class="profissional">Ambiente Profissional</li>
+<li class="familiar">Ambiente Familiar</li>
+<li class="sff">S.F.F.</li>
+<li class="outra_externa">Outra</li>
+<li class="relacionamento">Relacionamentos</li>
+<li class="provocada">Energia Provocada</li>
 </ul>
 
 <h2>Influências internas</h2>
@@ -634,6 +637,8 @@ $.getJSON( "consultas/"+cliente+"/"+consulta+".json", function( data ) {
     }
   });
 });
+
+
 
 </script>
 
