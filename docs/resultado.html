@@ -853,13 +853,13 @@ ul { color: gray;}
 
 
 <ul>
-  <li>Coronário</li>
-  <li>Frontal</li>
-  <li>Laringeo</li>
-  <li>Cardíaco</li>
-  <li>Plexo Solar</li>
-  <li>Sacro</li>
-  <li>Básico</li>
+  <li class="coronario">Coronário</li>
+  <li class="frontal">Frontal</li>
+  <li class="laringeo">Laringeo</li>
+  <li class="cardiaco">Cardíaco</li>
+  <li class="plexosolar">Plexo Solar</li>
+  <li class="sacro">Sacro</li>
+  <li class="basico">Básico</li>
 </ul>
 
 <script src="jquery.js"></script>
@@ -887,6 +887,7 @@ $.getJSON( "consultas/"+cliente+"/"+consulta+".json", function( data ) {
 
     // SVG
     $('#' + key +' >tspan').css('fill',corDaImagem);
+    $('#' + key).css('fill',corDaImagem); // chakras
     // Texto
     $( "." + key ).addClass(classe);
   });
