@@ -1,10 +1,19 @@
 {
   "telurica":1,
   "provocada":1,
-  "pessoas":0,
-  "profissional":0,
+  "pessoas":1,
+  "profissional":1,
   "familiar":1,
-  "sff":0,
-  "outra":0,
-  "relacionamento":0
+  "sff":1,
+  "outra_externa":1,
+  "relacionamento":1,
+
+  "medo":1,
+  "inseguranca":1,
+  "culpa":1,
+  "ciumes":1,
+  "violencia":1,
+  "ideias":1,
+  "lembrancas":1,
+  "outra_interna":1
 }
