@@ -8,6 +8,7 @@
 ul { color: gray;}
 .equilibrio { color: blue;}
 .desequilibrio { color: red;}
+.naoaferido { color: gray;}
 </style>
 </head>
 <body>
@@ -15,10 +16,12 @@ ul { color: gray;}
 <h1>Consulta</h1>
 
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+<p>Legenda:</p>
 
 <ul>
-  <li class="equilibrio">Azul está normal</li>
-  <li class="desequilibrio">Vemelho indica desequilíbrio</li>
+  <li class="equilibrio">Normal</li>
+  <li class="desequilibrio">Desequilíbrio</li>
+  <li class="naoaferido">Não aferido</li>
 </ul>
 
 
@@ -657,10 +660,6 @@ $.getJSON( "consultas/"+cliente+"/"+consulta+".json", function( data ) {
     $( "." + key ).addClass(classe);
   });
 });
-
-
-
-
 </script>
 
 </body>
