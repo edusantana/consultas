@@ -15,5 +15,14 @@
   "violencia":0,
   "ideias":0,
   "lembrancas":0,
-  "outra_interna":0
+  "outra_interna":0,
+
+  "coronario":0,
+  "frontal":0,
+  "laringeo":0,
+  "cardiaco":0,
+  "plexosolar":0,
+  "sacro":0,
+  "basico":0
+
 }
