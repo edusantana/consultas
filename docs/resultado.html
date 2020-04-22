@@ -885,11 +885,11 @@ $.getJSON( "consultas/"+cliente+"/"+consulta+".json", function( data ) {
       var classe ="equilibrio";
     }
 
+    // Texto
+    $( "." + key ).addClass(classe);
     // SVG
     $('#' + key +' >tspan').css('fill',corDaImagem);
     $('#' + key).css('fill',corDaImagem); // chakras
-    // Texto
-    $( "." + key ).addClass(classe);
   });
 });
 </script>
